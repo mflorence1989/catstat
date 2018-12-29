@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Category Five - Contact</title>
+<link rel="stylesheet" href="css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<style type="text/css">
+  select,
+  .select{
+    width:100%;
+  }
+  iframe{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+  }
+
+</style>
+</head>
+
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-item">Category 5</a>
+        <button class="button navbar-burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-start">
+            <a href="index.html" class="navbar-item">Home</a>
+            <a href="services.html" class="navbar-item">Services</a>
+            <a href="team.html" class="navbar-item">Team</a>
+            <a href="about.html" class="navbar-item">About</a>
+            <a href="contact.html" class="navbar-item">Contact</a>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable">
+            <a href="#" class="navbar-link">Language</a>
+            <div class="navbar-dropdown is boxed">
+              <a href="#" class="navbar-item">English</a>
+              <a href="#" class="navbar-item">Espanol</a>
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-1 has-text-centered">Contact</h2>
+      <div class="columns is-tablet">
+        <div class="column">
+          <h4 class="title">Address:</h4>
+          <address class="">
+            <strong>Category 5</strong><br>
+            400 Williams ave<br>
+            11207 Brooklyn,Ny<br>
+            <i class="fas fa-fw fa-phone"></i><a href="tel:+718-642-9542"> 718-642-9542</a><br>
+            <i class="fas fa-envelope"><a href="mailto:mflorence@gmail.com"> mflorence1989@gmail.com</a></i>
+          </address>
+        </div>
+        <div class="column">
+        <h4 class="title">Opening hours</h4>
+        <p>Monday-Thursday 8 am - 8 pm<br>
+          Friday-Saturday 8 am - 8 pm<br>
+          Sunday - CLOSED<br>
+        </p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column ">
+        <h4 class="title">Send us a message.</h4>
+        <form>
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <label class="label" for="name">Name</label>
+                <div class="control has-icons-left">
+                  <input type="text" id="name" class="input" placeholder="FirstName LastName" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-fw fa-user"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <label class="label" for="email">Email</label>
+                <div class="control has-icons-left">
+                  <input type="email" id="email"class="input" placeholder="example@gmail.com" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column">
+              <div class="field">
+                <label class="label" for="telephone">Telephone</label>
+                <div class="control has-icons-left">
+                  <input type="tel" id="telephone" class="input" placeholder="(111)-111-1111" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-fw fa-phone"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="field">
+                <label class="label" for="select">Depart</label>
+                <div class="control has-icons-left">
+                  <div class="select">
+                  <select id="select" aria-describedby="select-helpBlock" required>
+                  <option value="">select here</option>
+                  <option value="business">Business</option>
+                  <option value="sale">sale</option>
+                  <option value="support">home</option>
+                  </select>
+                  </div>
+
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+                <small class="form-text" id="select-helpBlock">
+                  Please select the recipient of your message.
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label"for="textarea">Message</label>
+            <div class="control">
+              <textarea  class="textarea" id="textarea" rows="5" placeholder="right your message here" required cols="80"></textarea>
+            </div>
+          </div>
+          <button type="submit"class="button is-primary" >Submit</button>
+          <button type="reset"class="button" >clear</button>
+        </form>
+        </div>
+      </div>
+      <div class="column">
+        <h4 class="title">Where to find us:</h4>
+        <figure class="image is-4by3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.357623630265!2d-73.90056868459641!3d40.666088579336936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c57af30827f%3A0x62a2c884e877aa60!2s400+Williams+Ave%2C+Brooklyn%2C+NY+11207!5e0!3m2!1sen!2sus!4v1546123738756" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-mobile is-multiline">
+        <div class="column is-half-mobile is-one-quarter-desktop">
+          <h6 class="title is-5">Quick Links</h6>
+          <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="services.html">Services</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li> <a href="team.html">Team</a></li>
+            <li> <a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="column is-half-mobile is-one-quarter-desktop">
+          <h6 class="title is-5">Information</h6>
+          <ul>
+            <li> <a href="#">Legal Information</a></li>
+            <li> <a href="#">Job Opportunties</a></li>
+            <li> <a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="column is-half-mobile is-one-quarter-desktop">
+          <h6 class="title is-5">Follow Us</h6>
+          <ul>
+            <li><i class="fab fa-fw fa-facebook"></i><a href="#"> Facebook</a></li>
+            <li><i class="fab fa-fw fa-instagram"></i><a href="#"> Instagram</a></li>
+            <li><i class="fab fa-fw fa-youtube"></i> <a href="#"> Youtube</a></li>
+            <li><i class="fab fa-fw fa-twitter"></i> <a href="#"> Twitter</a></li>
+          </ul>
+        </div>
+
+        <div class="column is-half-mobile is-one-quarter-desktop">
+          <h6 class="title is-5">Our Location: </h6>
+          <address class="">
+            <strong>Category 5</strong><br>
+            400 Williams ave<br>
+            11207 Brooklyn,NY<br>
+            <i class="fas fa-fw fa-phone"></i><a href="tel:+718-642-9542">718-642-9542</a><br>
+            <i class="fas fa-envelope"><a href="mailto:mflorence@gmail.com"> mflorence1989@gmail.com</a></i>
+          </address>
+        </div>
+      </div>
+      <p class="has-text-centered">&copy; Copyright 2018 All rights reserved</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+
+  });
+  </script>
+
+</body>
+
+
+</html>
